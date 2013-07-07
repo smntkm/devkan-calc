@@ -14,6 +14,7 @@ public class Calculator {
     @Path("add")
     public String add(@QueryParam("a")int a, @QueryParam("b")int b){
 				int result = a + b;
-        return result.toString();
+				
+        return Integer.toString(result);
     }
 }
